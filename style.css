@@ -1,0 +1,22 @@
+#container {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  background-color: #D8282F;
+  border: 1px solid white;
+  color: white;
+  padding: 25px;
+}
+
+#pokeBin {
+
+}
+
+.pokeCard {
+  width: 15%;
+  padding: 25px;
+  border: 1px solid black;
+}

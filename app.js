@@ -4,30 +4,9 @@ $(document).ready(function(){
 
   $('button').click(function(){
 
-    $.ajax({
-      method: "GET",
-      url: "http://pokeapi.co/api/v1/pokemon/1/"
-    })
+    var starter = Math.floor(Math.random()*9 + 1)
 
-    .done(function(data){
-      console.log(data);
-      $('#pokeBin').append(
-        `<div class="pokeCard">
-          <p>${data.name}</p>
-        </div>`
-      )
-    })
-
-    $.ajax({
-      url: "http://pokeapi.co/api/v1/description/4/"
-    }).done(function(data){
-      console.log(data);
-      console.log(data.description);
-      $(".pokeCard").append(
-        `<p>${data.description}</p>`
-      )
-    })
+    pokeGet(starter)
 
   })
-
 })
